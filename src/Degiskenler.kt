@@ -12,5 +12,7 @@ fun main() {
     var myAge : Double = 24.0
     println(myAge)
 
+    val mystring : String = "FirsString"
+
 
 }
