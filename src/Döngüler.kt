@@ -58,6 +58,67 @@ fun main() {
     }
 
     //Break
+    for (i in 1..5){
+        if(i == 5){
+            break
+        }
+        println(i)
+    }
+
+    var sayi3 : Int
+    var toplam1 = 0
+    while (true){
+        println("Sayı gir : ")
+        sayi3 = readLine()!!.toInt()
+
+        if(sayi3 == 0) break
+
+        toplam1 += sayi3
+    }
+
+    println("Toplam = $toplam1")
+
+    //Continue
+
+    for (i in 1..5){
+        println("$i atla")
+        if (i > 1 && i < 5) continue
+        println("$i devam")
+    }
+
+    var sayi4 : Int
+    var toplam4 = 0
+
+    for (i in 1..5){
+        println("Sayı gir : ")
+        sayi4 = readLine()!!.toInt()
+
+        if(sayi4 <= 0) continue
+
+        toplam4 += sayi4
+    }
+
+    println("Toplam : $toplam4")
+
+    //Tagged Break ve Continue
+
+    disdongu@for (i in 1..3){
+         icdongu@for (j in 1..5){
+             println("i = $i: j = $j")
+
+             if(i == 2)break@disdongu
+         }
+    }
+
+    println("---------------")
+
+    for (i in 1..4){
+        for(j in 1..5){
+            if (i == 2) continue
+            println("i = $i; j = $j")
+        }
+    }
+
 
 
 }
