@@ -17,12 +17,12 @@ fun main() {
 
 }
 
-fun ucleCarp(sayi: Int) : Int = sayi * 3
+    fun ucleCarp(sayi: Int) : Int = sayi * 3
 
-fun Int.ucleCarpExtension() = this * 3
+    fun Int.ucleCarpExtension() = this * 3
 
-fun ArrayList<String>.swap(x : Int, y: Int){
-    var temp = this[x]
-    this[x] = this[y]
-    this[y] = temp
+    fun ArrayList<String>.swap(x : Int, y: Int){
+        var temp = this[x]
+        this[x] = this[y]
+        this[y] = temp
 }
